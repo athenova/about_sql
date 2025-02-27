@@ -26,7 +26,9 @@ if not os.path.exists(tasks_file):
                     "domain": item['domain'],
                     "name": item['problem'],
                     "description_prompt": f"Опиши проблему '{item['problem']}' связанную с технологией '{item['technology']}' и программным средством '{item['soft']}' из области '{item['domain']}', не описывай решение, используй не более {TOPIC_WORD_LIMIT} слов",
+                    "description_image": f"Нарисуй рисунок, вдохновлённый проблемой '{item['problem']}' связанную с технологией '{item['technology']}' и программным средством '{item['soft']}' из области '{item['domain']}'",
                     "solution_prompt": f"Опиши решение проблемы '{item['problem']}' связанной с технологией '{item['technology']}' и программным средством '{item['soft']}' из области '{item['domain']}', используй не более {TOPIC_WORD_LIMIT} слов",
+                    "solution_image": f"Нарисуй рисунок, вдохновлённый решением проблемы '{item['problem']}' связанной с технологией '{item['technology']}' и программным средством '{item['soft']}' из области '{item['domain']}'",
                     "group": f"{item['technology']}/{item['soft']}",
                 }
                 tasks.append(task)
