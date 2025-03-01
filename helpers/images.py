@@ -17,7 +17,7 @@ def gen_image(task, problem=True):
     if not os.path.exists(folder_name):
         os.mkdir(folder_name)
 
-    type = "problem" if problem else "solution"
+    type = "description" if problem else "solution"
     temp_image_file = f"{folder_name}/{type}.webp"
     image_file_name = f"{folder_name}/{type}.png"
 
